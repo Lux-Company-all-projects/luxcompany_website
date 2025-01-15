@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="slide.css">
+  
+</head>
+<body>
+<div class="slideshow-container">
+
+  
+  <div class="mySlides fade">
+    
+    <img src="manette.jpg" style="width:100%">
+    
+  </div>
+
+  <div class="mySlides fade">
+    
+    <img src="lost_ark_mass_effect_andromeda_4k-2560x1440.jpg" style="width:100%">
+    
+  </div>
+
+  <div class="mySlides fade">
+    
+    <img src="a_kings_demise-wallpaper-2560x1440.jpg" style="width:100%">
+    
+  </div>
+  <script>
+    var myIndex = 0;
+    carousel();
+
+    function carousel() {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        myIndex++;
+        if (myIndex > x.length) {
+            myIndex = 1
+        }
+        x[myIndex - 1].style.display = "block";
+        setTimeout(carousel, 2500);
+    }
+</script>
+
+  
+    
+</body>
+</html>
