@@ -1,1 +1,1 @@
-# Mon projet LuxCompany
+Notre projet de création du site web de Lux Company.
