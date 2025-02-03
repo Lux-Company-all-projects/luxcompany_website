@@ -47,7 +47,7 @@ nav {
 
 .fab,
 .fas {
-    width: 200px;
+    width: px;
     margin: 60px;
 
 }
@@ -325,4 +325,5 @@ button:hover {
     display: flex;
     justify-content: space-evenly;
     padding-top: 20px;
+
 }
