@@ -1,7 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
 @import "tailwindcss";
 
-/*bg-gray-900*/
+/*bg-gray-900 = 
+    background-color: rgb(17 24 39); , bg-gray-800/90 (ty le any navbar)*/
 /*
 <section class="h-screen flex flex-col items-center justify-center text-center px-4 bg-gray-900 text-white">
     <h1 class="text-5xl font-extrabold text-red-500">Bienvenue sur Lux Gaming</h1>
@@ -11,8 +12,7 @@
     </button>
   </section>*/
 body {
-    background-color: rgb(17 24 39);
-    font-family: "Press Start 2P", cursive;
+  font-family: "Press Start 2P", cursive;
 }
 /*html, body { height: 100%; }
 body { margin: 0; }
