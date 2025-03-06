@@ -2,8 +2,8 @@
   class="fixed top-0 left-0 right-0 bg-red-800 p-4 flex items-center justify-between shadow-lg"
 >
   <div class="hidden md:flex items-center space-x-6">
-    <a routerLink="/" class="hover:text-blue-400 text-white text-xs">Accueil</a>
-    <a routerLink="/games" class="hover:text-blue-400 text-white text-xs"
+    <a routerLink="/" class="hover:text-red-400 text-white text-xs">Accueil</a>
+    <a routerLink="/games" class="hover:text-red-400 text-white text-xs"
       >Jeux</a
     >
   </div>
@@ -16,10 +16,10 @@
   </div>
 
   <div class="hidden md:flex items-center space-x-6">
-    <a routerLink="/about" class="hover:text-blue-400 text-white text-xs"
+    <a routerLink="/about" class="hover:text-red-400 text-white text-xs"
       >À propos</a
     >
-    <a routerLink="/contact" class="hover:text-blue-400 text-white text-xs"
+    <a routerLink="/contact" class="hover:text-red-400 text-white text-xs"
       >Contact</a
     >
   </div>
@@ -57,7 +57,7 @@
 
 <div
   *ngIf="menuOpen"
-  class="fixed top-16 left-0 right-0 bg-gray-800/90 p-6 flex flex-col items-center space-y-4 md:hidden"
+  class="fixed top-20 left-0 right-0 bg-red-700 p-6 flex flex-col items-center space-y-4 md:hidden"
 >
   <a routerLink="/" class="text-white text-lg">Accueil</a>
   <a routerLink="/games" class="text-white text-lg">Jeux</a>
