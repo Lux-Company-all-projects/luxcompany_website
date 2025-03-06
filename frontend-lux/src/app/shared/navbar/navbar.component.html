@@ -1,1 +1,70 @@
-<p>navbar works!</p>
+<nav
+  class="fixed top-0 left-0 right-0 bg-gray-800/90 p-4 flex items-center justify-between shadow-lg"
+>
+  <!-- Section gauche (Desktop) -->
+  <div class="hidden md:flex items-center space-x-6">
+    <a routerLink="/" class="hover:text-blue-400 text-white text-xs">Accueil</a>
+    <a routerLink="/games" class="hover:text-blue-400 text-white text-xs"
+      >Jeux</a
+    >
+  </div>
+
+  <!-- Logo centré -->
+  <div
+    class="absolute left-1/2 transform -translate-x-1/2 flex items-center space-x-2"
+  >
+    <img src="/Logo.png" alt="Lux | Company logo" class="w-12" />
+    <span class="text-xl font-semibold text-white">Lux | Company</span>
+  </div>
+
+  <div class="hidden md:flex items-center space-x-6">
+    <a routerLink="/about" class="hover:text-blue-400 text-white text-xs"
+      >À propos</a
+    >
+    <a routerLink="/contact" class="hover:text-blue-400 text-white text-xs"
+      >Contact</a
+    >
+  </div>
+
+  <!-- mobile icone -->
+  <button (click)="toggleMenu()" class="md:hidden p-2">
+    <svg
+      [ngClass]="{ hidden: menuOpen, block: !menuOpen }"
+      class="w-8 h-8 text-white stroke-current"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      stroke-width="2"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    >
+      <line x1="3" y1="12" x2="21" y2="12"></line>
+      <line x1="3" y1="6" x2="21" y2="6"></line>
+      <line x1="3" y1="18" x2="21" y2="18"></line>
+    </svg>
+    <svg
+      [ngClass]="{ block: menuOpen, hidden: !menuOpen }"
+      class="w-8 h-8 text-white stroke-current"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      stroke-width="2"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    >
+      <line x1="18" y1="6" x2="6" y2="18"></line>
+      <line x1="6" y1="6" x2="18" y2="18"></line>
+    </svg>
+  </button>
+</nav>
+
+<!--mobile version -->
+<div
+  *ngIf="menuOpen"
+  class="fixed top-16 left-0 right-0 bg-gray-800/90 p-6 flex flex-col items-center space-y-4 md:hidden"
+>
+  <a routerLink="/" class="text-white text-lg">Accueil</a>
+  <a routerLink="/games" class="text-white text-lg">Jeux</a>
+  <a routerLink="/about" class="text-white text-lg">À propos</a>
+  <a routerLink="/contact" class="text-white text-lg">Contact</a>
+</div>
