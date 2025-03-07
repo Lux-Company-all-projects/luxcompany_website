@@ -1,0 +1,25 @@
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+.typing-animation {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 3px solid #000; 
+  animation: typing 4s steps(40) 1s forwards;
+}
+
+@media (max-width: 640px) {
+  .typing-animation {
+    animation: none; 
+    display: inline; 
+    white-space: normal; 
+    border-right: none;
+  }
+}
