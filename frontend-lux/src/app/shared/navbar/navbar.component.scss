@@ -1,5 +1,56 @@
 .active-link {
-  color: #f87171; 
+  color: #f87171;
   font-weight: bold;
   border-bottom: 2px solid #f87171;
 }
+@keyframes pixelBlink {
+  0%,
+  100% {
+    text-shadow: 2px 2px 0 #ff0000, -2px -2px 0 #0000ff;
+  }
+  50% {
+    text-shadow: -2px 2px 0 #0000ff, 2px -2px 0 #ff0000;
+  }
+}
+
+.active-link {
+  color: #ffffff;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-family: "Press Start 2P", monospace, sans-serif; 
+  position: relative;
+
+  /* contour anle le izy */
+  text-shadow: 2px 2px 0 #ff0000, -2px -2px 0 #0000ff;
+  animation: pixelBlink 2s infinite;
+
+  /* style ambany texte */
+  &:after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: repeating-linear-gradient(
+      to right,
+      transparent,
+      transparent 2px,
+      #ffffff 2px,
+      #ffffff 4px
+    );
+  }
+}
+/*
+.active-link {
+  color: #00ff00; 
+  font-weight: bold;
+  text-transform: uppercase;
+  position: relative;
+  padding: 0 5px; 
+  background: rgba(0, 0, 0, 0.5);
+  border: 2px solid #00ff00;
+  box-shadow: 0 0 5px #00ff00;
+}
+*/
