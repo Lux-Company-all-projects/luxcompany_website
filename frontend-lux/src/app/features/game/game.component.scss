@@ -1,0 +1,18 @@
+
+@keyframes grid-move {
+    0% { background-position: 0 0; }
+    100% { background-position: 100px 100px; }
+  }
+  
+  .animate-grid-move {
+    animation: grid-move 10s linear infinite;
+  }
+  
+  .scanlines {
+    background: linear-gradient(
+      rgba(0, 0, 0, 0.2) 50%, 
+      rgba(0, 0, 0, 0) 50%
+    );
+    background-size: 100% 4px;
+    pointer-events: none;
+  }

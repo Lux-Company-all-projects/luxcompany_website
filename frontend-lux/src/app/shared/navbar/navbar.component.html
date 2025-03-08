@@ -2,8 +2,17 @@
   class="fixed top-0 left-0 right-0 bg-red-800 p-4 flex items-center justify-between shadow-lg z-50"
 >
   <div class="hidden md:flex items-center space-x-6">
-    <a routerLink="/" class="hover:text-red-400 text-white text-xs">Accueil</a>
-    <a routerLink="/games" class="hover:text-red-400 text-white text-xs"
+    <a
+      routerLink="/"
+      routerLinkActive="active-link"
+      [routerLinkActiveOptions]="{ exact: true }"
+      class="hover:text-red-400 text-white text-xs"
+      >Accueil</a
+    >
+    <a
+      routerLink="/games"
+      routerLinkActive="active-link"
+      class="hover:text-red-400 text-white text-xs"
       >Jeux</a
     >
   </div>
@@ -11,19 +20,24 @@
   <div
     class="absolute left-1/2 transform -translate-x-1/2 flex items-center space-x-2 cursor-pointer"
   >
-    <img src="/logo-no-background.png" alt="Lux | Company logo" class="w-20 " />
+    <img src="/logo-no-background.png" alt="Lux | Company logo" class="w-20" />
     <span class="text-base font-semibold text-white">Lux Company</span>
   </div>
 
   <div class="hidden md:flex items-center space-x-6">
-    <a routerLink="/about" class="hover:text-red-400 text-white text-xs"
+    <a
+      routerLink="/about"
+      routerLinkActive="active-link"
+      class="hover:text-red-400 text-white text-xs"
       >À propos</a
     >
-    <a routerLink="/contact" class="hover:text-red-400 text-white text-xs"
+    <a
+      routerLink="/contact"
+      routerLinkActive="active-link"
+      class="hover:text-red-400 text-white text-xs"
       >Contact</a
     >
   </div>
-
   <button (click)="toggleMenu()" class="md:hidden p-2">
     <svg
       [ngClass]="{ hidden: menuOpen, block: !menuOpen }"
@@ -59,8 +73,29 @@
   *ngIf="menuOpen"
   class="fixed top-20 left-0 right-0 bg-red-700 p-6 flex flex-col items-center space-y-4 md:hidden"
 >
-  <a routerLink="/" class="text-white text-lg">Accueil</a>
-  <a routerLink="/games" class="text-white text-lg">Jeux</a>
-  <a routerLink="/about" class="text-white text-lg">À propos</a>
-  <a routerLink="/contact" class="text-white text-lg">Contact</a>
+  <a
+    routerLink="/"
+    routerLinkActive="active-link"
+    [routerLinkActiveOptions]="{ exact: true }"
+    class="text-white text-lg"
+    >Accueil</a
+  >
+  <a
+    routerLink="/games"
+    routerLinkActive="active-link"
+    class="text-white text-lg"
+    >Jeux</a
+  >
+  <a
+    routerLink="/about"
+    routerLinkActive="active-link"
+    class="text-white text-lg"
+    >À propos</a
+  >
+  <a
+    routerLink="/contact"
+    routerLinkActive="active-link"
+    class="text-white text-lg"
+    >Contact</a
+  >
 </div>
