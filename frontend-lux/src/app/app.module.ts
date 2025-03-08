@@ -5,7 +5,6 @@ import { provideAnimationsAsync } from '@angular/platform-browser/animations/asy
 import { NavbarComponent } from './shared/navbar/navbar.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { HomeComponent } from "./features/home/home.component";
-
 @NgModule({
   declarations: [AppComponent, NavbarComponent,HomeComponent],
   imports: [AppRoutingModule, BrowserModule],
