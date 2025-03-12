@@ -16,3 +16,21 @@
     background-size: 100% 4px;
     pointer-events: none;
   }
+.scrollable-content::-webkit-scrollbar {
+  width: 8px; 
+}
+
+.scrollable-content::-webkit-scrollbar-track {
+  background: #1f2937; 
+  border-radius: 10px;
+}
+
+.scrollable-content::-webkit-scrollbar-thumb {
+  background: #4b5563;
+  border-radius: 10px;
+  border: 2px solid #1f2937; 
+}
+
+.scrollable-content::-webkit-scrollbar-thumb:hover {
+  background: #6b7280; 
+}

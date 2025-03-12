@@ -9,7 +9,7 @@
   ></div>
 
   <div class="relative flex flex-col items-center w-full max-w-4xl">
-   <h1 class="text-xl font-bold text-gray-300 mb-6">
+    <h1 class="text-xl font-bold text-gray-300 mb-6">
       Liste des jeux disponibles actuellement
     </h1>
 
@@ -64,26 +64,30 @@
 
   <!-- ato ny detail jeux modal -->
   <div
-    *ngIf="selectedGame"
-    class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50"
-  >
-    <div class="bg-gray-800 p-6 rounded-lg shadow-lg max-w-lg w-full relative">
-      <button (click)="closeModal()" class="absolute top-2 right-2 text-white">
-        ✖
-      </button>
-      <h2 class="text-2xl font-bold text-gray-300 text-center">
-        {{ selectedGame.title }}
-      </h2>
-      <p class="text-gray-400 mt-2 text-center">
+  *ngIf="selectedGame"
+  class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50"
+>
+  <div class="bg-gray-800 p-6 rounded-lg shadow-lg max-w-lg w-full relative">
+    <button (click)="closeModal()" class="absolute top-2 right-2 text-white">
+      ✖
+    </button>
+    <h2 class="text-2xl font-bold text-gray-300 text-center">
+      {{ selectedGame.title }}
+    </h2>
+    <div class="mt-2 max-h-32 overflow-y-auto px-2 scrollable-content">
+      <p class="text-gray-400 text-center whitespace-pre-line">
         {{ selectedGame.description }}
       </p>
-      <div class="flex justify-center mt-4">
-        <img
-          [src]="selectedGame.image"
-          [alt]="selectedGame.title"
-          class="rounded-lg shadow-md object-cover max-h-64 mx-auto"
-        />
-      </div>
+    </div>
+    
+    <div class="flex justify-center mt-4">
+      <img
+        [src]="selectedGame.image"
+        [alt]="selectedGame.title"
+        class="rounded-lg shadow-md object-cover max-h-64 mx-auto"
+      />
     </div>
   </div>
+</div>
+
 </section>
