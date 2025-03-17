@@ -1,36 +1,36 @@
-
 @keyframes grid-move {
-    0% { background-position: 0 0; }
-    100% { background-position: 100px 100px; }
+  0% {
+    background-position: 0 0;
   }
-  
-  .animate-grid-move {
-    animation: grid-move 10s linear infinite;
+  100% {
+    background-position: 100px 100px;
   }
-  
-  .scanlines {
-    background: linear-gradient(
-      rgba(0, 0, 0, 0.2) 50%, 
-      rgba(0, 0, 0, 0) 50%
-    );
-    background-size: 100% 4px;
-    pointer-events: none;
-  }
+}
+
+.animate-grid-move {
+  animation: grid-move 10s linear infinite;
+}
+
+.scanlines {
+  background: linear-gradient(rgba(0, 0, 0, 0.2) 50%, rgba(0, 0, 0, 0) 50%);
+  background-size: 100% 4px;
+  pointer-events: none;
+}
 .scrollable-content::-webkit-scrollbar {
-  width: 8px; 
+  width: 8px;
 }
 
 .scrollable-content::-webkit-scrollbar-track {
-  background: #1f2937; 
+  background: #1f2937;
   border-radius: 10px;
 }
 
 .scrollable-content::-webkit-scrollbar-thumb {
   background: #4b5563;
   border-radius: 10px;
-  border: 2px solid #1f2937; 
+  border: 2px solid #1f2937;
 }
 
 .scrollable-content::-webkit-scrollbar-thumb:hover {
-  background: #6b7280; 
+  background: #6b7280;
 }

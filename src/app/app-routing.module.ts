@@ -2,11 +2,16 @@ import { NgModule } from '@angular/core';
 import { ExtraOptions, RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './features/home/home.component';
 import { GameComponent } from './features/game/game.component';
+import { ContactComponent } from './features/contact/contact.component';
 const routes: Routes = [
   { path: '', component: HomeComponent },
   {
     path: 'games',
     component: GameComponent,
+  },
+  {
+    path  :'contact',
+    component : ContactComponent
   },
 ];
 const routerOptions: ExtraOptions = {
