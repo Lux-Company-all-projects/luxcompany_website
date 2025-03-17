@@ -22,7 +22,7 @@
           <h2 class="text-2xl font-bold text-gray-300">
             {{ games[currentIndex].title }}
           </h2>
-          <p class="text-gray-400 mt-2 max-w-96 line-clamp-3 text-justify">
+          <p class="text-gray-400 mt-2 max-w-96 line-clamp-3 text-justify text-sm">
             {{ games[currentIndex].description }}
           </p>
           <div class="mt-4 flex gap-2">
@@ -75,7 +75,7 @@
         {{ selectedGame.title }}
       </h2>
       <div class="mt-2 max-h-32 overflow-y-auto px-2 scrollable-content">
-        <p class="text-gray-400 whitespace-pre-line break-words text-justify">
+        <p class="text-gray-400 whitespace-pre-line break-words text-justify text-sm">
           {{ selectedGame.description }}
         </p>
       </div>
