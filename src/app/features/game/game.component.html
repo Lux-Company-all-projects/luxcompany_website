@@ -22,7 +22,7 @@
           <h2 class="text-2xl font-bold text-gray-300">
             {{ games[currentIndex].title }}
           </h2>
-          <p class="text-gray-400 mt-2 line-clamp-3">
+          <p class="text-gray-400 mt-2 max-w-96 line-clamp-3">
             {{ games[currentIndex].description }}
           </p>
           <div class="mt-4 flex gap-2">
@@ -45,7 +45,7 @@
           <img
             [src]="games[currentIndex].image"
             [alt]="games[currentIndex].title"
-            class="rounded-lg shadow-md object-cover max-h-64 mx-auto"
+            class="rounded-lg shadow-md object-fill mx-auto w-72 h-40"
           />
         </div>
       </div>
@@ -64,30 +64,29 @@
 
   <!-- ato ny detail jeux modal -->
   <div
-  *ngIf="selectedGame"
-  class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50"
->
-  <div class="bg-gray-800 p-6 rounded-lg shadow-lg max-w-lg w-full relative">
-    <button (click)="closeModal()" class="absolute top-2 right-2 text-white">
-      ✖
-    </button>
-    <h2 class="text-2xl font-bold text-gray-300 text-center">
-      {{ selectedGame.title }}
-    </h2>
-    <div class="mt-2 max-h-32 overflow-y-auto px-2 scrollable-content">
-      <p class="text-gray-400 text-center whitespace-pre-line">
-        {{ selectedGame.description }}
-      </p>
-    </div>
-    
-    <div class="flex justify-center mt-4">
-      <img
-        [src]="selectedGame.image"
-        [alt]="selectedGame.title"
-        class="rounded-lg shadow-md object-cover max-h-64 mx-auto"
-      />
+    *ngIf="selectedGame"
+    class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50"
+  >
+    <div class="bg-gray-800 p-6 rounded-lg shadow-lg max-w-2xl w-full relative">
+      <button (click)="closeModal()" class="absolute top-2 right-2 text-white">
+        ✖
+      </button>
+      <h2 class="text-2xl font-bold text-gray-300 text-center">
+        {{ selectedGame.title }}
+      </h2>
+      <div class="mt-2 max-h-32 overflow-y-auto px-2 scrollable-content">
+        <p class="text-gray-400 text-center whitespace-pre-line break-words">
+          {{ selectedGame.description }}
+        </p>
+      </div>
+
+      <div class="flex justify-center mt-4">
+        <img
+          [src]="selectedGame.image"
+          [alt]="selectedGame.title"
+          class="rounded-lg shadow-md object-cover max-h-64 mx-auto"
+        />
+      </div>
     </div>
   </div>
-</div>
-
 </section>
