@@ -6,14 +6,14 @@
       routerLink="/"
       routerLinkActive="active-link"
       [routerLinkActiveOptions]="{ exact: true }"
-      class="hover:text-red-400 text-white text-xs"
-      >Accueil</a
+      class="hover:text-red-400 text-white text-sm max-w-lg px-3 truncate"
+      >{{ "NAV.HOME" | translate }}</a
     >
     <a
       routerLink="/games"
       routerLinkActive="active-link"
-      class="hover:text-red-400 text-white text-xs"
-      >Jeux</a
+      class="hover:text-red-400 text-white text-sm max-w-lg px-3 truncate"
+      >{{ "NAV.GAMES" | translate }}</a
     >
   </div>
 
@@ -28,15 +28,50 @@
     <a
       routerLink="/about"
       routerLinkActive="active-link"
-      class="hover:text-red-400 text-white text-xs"
-      >À propos</a
+      class="hover:text-red-400 text-white text-sm max-w-lg px-3 truncate"
+      >{{ "NAV.ABOUT" | translate }}</a
     >
     <a
       routerLink="/contact"
       routerLinkActive="active-link"
-      class="hover:text-red-400 text-white text-xs"
-      >Contact</a
+      class="hover:text-red-400 text-white text-sm max-w-lg px-3 truncate"
+      >{{ "NAV.CONTACT" | translate }}</a
     >
+    <div class="relative">
+      <button
+        (click)="toggleLanguageMenu()"
+        class="flex items-center hover:text-red-400 text-white text-sm"
+      >
+        <svg
+          class="w-5 h-5 mr-1"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <circle cx="12" cy="12" r="10"></circle>
+          <line x1="2" y1="12" x2="22" y2="12"></line>
+          <path
+            d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"
+          ></path>
+        </svg>
+        {{ currentLanguage }}
+      </button>
+      <div
+        *ngIf="languageMenuOpen"
+        class="absolute right-0 mt-5 bg-red-700 rounded shadow-lg p-2 w-24 z-50"
+      >
+        <button
+          *ngFor="let lang of languages"
+          (click)="changeLanguage(lang.code)"
+          class="block w-full text-left px-2 py-1 text-white hover:bg-red-600 text-xs truncate"
+        >
+          {{ lang.name }}
+        </button>
+      </div>
+    </div>
   </div>
   <button (click)="toggleMenu()" class="md:hidden p-2">
     <svg
@@ -75,27 +110,46 @@
     <a
       routerLink="/"
       routerLinkActive="active-link"
-      [routerLinkActiveOptions]="{ exact: true }"
       class="text-white text-lg"
-      >Accueil</a
+      >{{ "NAV.HOME" | translate }}</a
     >
     <a
       routerLink="/games"
       routerLinkActive="active-link"
       class="text-white text-lg"
-      >Jeux</a
+      >{{ "NAV.GAMES" | translate }}</a
     >
     <a
       routerLink="/about"
       routerLinkActive="active-link"
       class="text-white text-lg"
-      >À propos</a
+      >{{ "NAV.ABOUT" | translate }}</a
     >
     <a
       routerLink="/contact"
       routerLinkActive="active-link"
       class="text-white text-lg"
-      >Contact</a
+      >{{ "NAV.CONTACT" | translate }}</a
     >
+    <div class="relative w-full flex justify-center">
+      <button
+        (click)="toggleLanguageMenu()"
+        class="text-white text-lg bg-red-600 px-4 py-2 rounded-md shadow-md"
+      >
+        {{ currentLanguage }}
+      </button>
+      <div
+        *ngIf="languageMenuOpen"
+        class="absolute mt-12 bg-red-800 rounded shadow-lg p-2 w-32 text-center"
+      >
+        <button
+          *ngFor="let lang of languages"
+          (click)="changeLanguage(lang.code)"
+          class="block w-full px-2 py-1 text-white hover:bg-red-600 text-xs"
+        >
+          {{ lang.name }}
+        </button>
+      </div>
+    </div>
   </div>
 </nav>

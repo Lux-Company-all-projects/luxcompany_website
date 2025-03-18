@@ -1,0 +1,13 @@
+{
+  "NAV": {
+    "HOME": "Home",
+    "GAMES": "Games",
+    "ABOUT": "About",
+    "CONTACT": "Contact"
+  },
+  "LANGUAGE": {
+    "FRENCH": "French",
+    "ENGLISH": "English",
+    "MALAGASY": "Malagasy"
+  }
+}
