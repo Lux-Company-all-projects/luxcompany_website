@@ -6,35 +6,33 @@
       routerLink="/"
       routerLinkActive="active-link"
       [routerLinkActiveOptions]="{ exact: true }"
-      class="hover:text-red-400 text-white text-sm max-w-lg px-3 truncate"
+      class="hover:text-red-400 text-white text-sm max-w-lg px-3"
       >{{ "NAV.HOME" | translate }}</a
     >
     <a
       routerLink="/games"
       routerLinkActive="active-link"
-      class="hover:text-red-400 text-white text-sm max-w-lg px-3 truncate"
+      class="hover:text-red-400 text-white text-sm max-w-lg px-3"
       >{{ "NAV.GAMES" | translate }}</a
     >
   </div>
-
   <div
     class="absolute left-1/2 transform -translate-x-1/2 flex items-center space-x-2 cursor-pointer"
   >
     <img src="/logo-no-background.png" alt="Lux | Company logo" class="w-20" />
     <span class="text-base font-semibold text-white">Lux Company</span>
   </div>
-
   <div class="hidden md:flex items-center space-x-6">
     <a
       routerLink="/about"
       routerLinkActive="active-link"
-      class="hover:text-red-400 text-white text-sm max-w-lg px-3 truncate"
+      class="hover:text-red-400 text-white text-sm max-w-lg px-3"
       >{{ "NAV.ABOUT" | translate }}</a
     >
     <a
       routerLink="/contact"
       routerLinkActive="active-link"
-      class="hover:text-red-400 text-white text-sm max-w-lg px-3 truncate"
+      class="hover:text-red-400 text-white text-sm max-w-lg px-3"
       >{{ "NAV.CONTACT" | translate }}</a
     >
     <div class="relative">
@@ -102,7 +100,6 @@
       <line x1="6" y1="6" x2="18" y2="18"></line>
     </svg>
   </button>
-
   <div
     *ngIf="menuOpen"
     class="fixed top-20 left-0 right-0 bg-red-700 p-6 flex flex-col items-center space-y-4 md:hidden"
