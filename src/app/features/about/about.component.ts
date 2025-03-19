@@ -1,11 +1,83 @@
-import { Component } from '@angular/core';
+import { Component } from "@angular/core";
 
 @Component({
-  selector: 'app-about',
-  imports: [],
-  templateUrl: './about.component.html',
-  styleUrl: './about.component.scss'
+  selector: "app-about",
+  standalone : false,
+  templateUrl: "./about.component.html",
+  styleUrl: "./about.component.scss",
 })
 export class AboutComponent {
+  currentIndex = 0;
+  teamMembers = [
+    {
+      name: "RANDRIANIRINA Lahatriniaina Luca",
+      age: 19,
+      role: "Leader",
+      specialties: ["Game Development", "Cybersecurity"],
+      email: "lucarandrianirina2507@gmail.com",
+    },
+    {
+      name: "ANDRIAMAHEFATIANA Tiavina Niaina",
+      age: 18,
+      role: "Développeur Web",
+      specialties: ["Développement Web"],
+      email: "Tiavinamahefa4@gmail.com",
+    },
+    {
+      name: "AMBININTSOA Hajatiana",
+      age: 22,
+      role: "Spécialiste Réseau",
+      specialties: ["Réseau Informatique"],
+      email: "hajatianaambinintsoa11@gmail.com",
+    },
+    {
+      name: "RAKOTOARISON Avotra",
+      age: 20,
+      role: "Cybersécurité",
+      specialties: ["Cybersecurity"],
+      email: "rakotoarisonavotra53@gmail.com",
+    },
+    {
+      name: "ANDRIANARIVO Alain Patrick",
+      age: 19,
+      role: "Hacker",
+      specialties: ["Hacking"],
+      email: "pahkely33@gmail.com",
+    },
+    {
+      name: "JOELNOMENA Lahatrin'ny Avo",
+      age: 18,
+      role: "Game Developer",
+      specialties: ["Game Development", "Cybersecurity"],
+      email: "tiavinanomana451@gmail.com",
+    },
+    {
+      name: "RAMILISON Faniloniaina",
+      age: null,
+      role: "Développeur",
+      specialties: ["Développement"],
+      email: "faniloniaina21@gmail.com",
+    },
+    {
+      name: "ANDRIANJAFIMAHEFA Anjarimanitra Misandratriniaina",
+      age: 18,
+      role: "IA Enthusiast",
+      specialties: ["Intelligence Artificielle"],
+      email: "andrianjafimahefamisandratra@gmail.com",
+    },
+    {
+      name: "RANDRIAMIHAJA Jacques Kenny",
+      age: 17,
+      role: "Ethical Hacker",
+      specialties: ["Hacking Éthique", "Base de Données", "Développement Web"],
+      email: "kennyrandriamihaja@gmail.com",
+    },
+  ];
+  prevSlide() {
+    this.currentIndex = (this.currentIndex - 1 + this.teamMembers.length) % this.teamMembers.length;
+  }
 
+  nextSlide() {
+    this.currentIndex = (this.currentIndex + 1) % this.teamMembers.length;
+  }
 }

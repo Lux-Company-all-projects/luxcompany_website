@@ -3,6 +3,7 @@ import { ExtraOptions, RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './features/home/home.component';
 import { GameComponent } from './features/game/game.component';
 import { ContactComponent } from './features/contact/contact.component';
+import { AboutComponent } from './features/about/about.component';
 const routes: Routes = [
   { path: '', component: HomeComponent },
   {
@@ -13,6 +14,10 @@ const routes: Routes = [
     path  :'contact',
     component : ContactComponent
   },
+  {
+    path :'about',
+    component :AboutComponent
+  }
 ];
 const routerOptions: ExtraOptions = {
   scrollPositionRestoration: 'disabled',

@@ -9,12 +9,14 @@ import { GameComponent } from "./features/game/game.component";
 import { TranslateModule, TranslateLoader } from "@ngx-translate/core";
 import { TranslateHttpLoader } from "@ngx-translate/http-loader";
 import { HttpClient,HttpClientModule } from "@angular/common/http";
+import { AboutComponent } from "./features/about/about.component";
+
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http, "/", ".json");
 }
 @NgModule({
-  declarations: [AppComponent, NavbarComponent, HomeComponent, GameComponent],
+  declarations: [AppComponent, NavbarComponent, HomeComponent, GameComponent,AboutComponent],
   imports: [
     AppRoutingModule,
     BrowserModule,
