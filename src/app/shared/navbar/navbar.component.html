@@ -35,11 +35,12 @@
       class="hover:text-red-400 text-white text-sm max-w-lg px-3"
       >{{ "NAV.CONTACT" | translate }}</a
     >
-    <div class="relative">
-      <button
+    <!--
+      <div class="relative">
+        <button
         (click)="toggleLanguageMenu()"
         class="flex items-center hover:text-red-400 text-white text-sm"
-      >
+        >
         <svg
           class="w-5 h-5 mr-1"
           viewBox="0 0 24 24"
@@ -48,28 +49,29 @@
           stroke-width="2"
           stroke-linecap="round"
           stroke-linejoin="round"
-        >
+          >
           <circle cx="12" cy="12" r="10"></circle>
           <line x1="2" y1="12" x2="22" y2="12"></line>
           <path
-            d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"
+          d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"
           ></path>
         </svg>
         {{ currentLanguage }}
       </button>
       <div
-        *ngIf="languageMenuOpen"
-        class="absolute right-0 mt-5 bg-red-700 rounded shadow-lg p-2 w-24 z-50"
+      *ngIf="languageMenuOpen"
+      class="absolute right-0 mt-5 bg-red-700 rounded shadow-lg p-2 w-24 z-50"
       >
-        <button
-          *ngFor="let lang of languages"
-          (click)="changeLanguage(lang.code)"
-          class="block w-full text-left px-2 py-1 text-white hover:bg-red-600 text-xs truncate"
-        >
-          {{ lang.name }}
-        </button>
-      </div>
-    </div>
+      <button
+      *ngFor="let lang of languages"
+      (click)="changeLanguage(lang.code)"
+      class="block w-full text-left px-2 py-1 text-white hover:bg-red-600 text-xs truncate"
+      >
+      {{ lang.name }}
+    </button>
+  </div>
+</div>
+-->
   </div>
   <button (click)="toggleMenu()" class="md:hidden p-2">
     <svg
@@ -128,6 +130,7 @@
       class="text-white text-lg"
       >{{ "NAV.CONTACT" | translate }}</a
     >
+    <!--
     <div class="relative w-full flex justify-center">
       <button
         (click)="toggleLanguageMenu()"
@@ -148,5 +151,6 @@
         </button>
       </div>
     </div>
+    -->
   </div>
 </nav>

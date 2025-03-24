@@ -28,7 +28,11 @@
             {{ games[currentIndex].description }}
           </p>
           <div class="mt-4 flex flex-col sm:flex-row gap-2">
-            <a [href]="games[currentIndex].downloadLink" target="_blank" rel="noopener noreferrer">
+            <a
+              [href]="games[currentIndex].downloadLink"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <button
                 class="bg-red-800 hover:bg-red-700 text-white py-2 px-4 rounded-full w-full sm:w-auto"
               >
@@ -71,18 +75,16 @@
   <!-- Modal Détails Jeux -->
   <div
     *ngIf="selectedGame"
-    class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 p-4"
+    class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50"
   >
-    <div
-      class="bg-gray-800 p-4 sm:p-6 rounded-lg shadow-lg max-w-md sm:max-w-2xl w-full relative"
-    >
+    <div class="bg-gray-800 p-6 rounded-lg shadow-lg max-w-2xl w-full relative">
       <button (click)="closeModal()" class="absolute top-2 right-2 text-white">
         ✖
       </button>
-      <h2 class="text-lg sm:text-2xl font-bold text-gray-300 text-center">
+      <h2 class="text-2xl font-bold text-gray-300 text-center">
         {{ selectedGame.title }}
       </h2>
-      <div class="mt-2 max-h-96 overflow-y-auto px-2 scrollable-content">
+      <div class="mt-2 max-h-32 overflow-y-auto px-2 scrollable-content">
         <p
           class="text-gray-400 whitespace-pre-line break-words text-justify text-sm"
         >
@@ -94,7 +96,7 @@
         <img
           [src]="selectedGame.image"
           [alt]="selectedGame.title"
-          class="rounded-lg shadow-md object-contain w-72 h-40 sm:w-72 sm:h-40 mx-auto"
+          class="rounded-lg shadow-md object-cover max-h-64 mx-auto"
         />
       </div>
     </div>
