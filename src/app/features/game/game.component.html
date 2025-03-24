@@ -1,5 +1,5 @@
 <section
-  class="min-h-screen flex items-center justify-center px-6 bg-gradient-to-b from-gray-900 to-gray-800 text-white relative overflow-hidden"
+  class="min-h-screen flex items-center justify-center px-4 sm:px-6 bg-gradient-to-b from-gray-900 to-gray-800 text-white relative overflow-hidden"
 >
   <div
     class="absolute inset-0 opacity-20 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] animate-grid-move"
@@ -9,46 +9,51 @@
   ></div>
 
   <div class="relative flex flex-col items-center w-full max-w-4xl">
-    <h1 class="text-xl font-bold text-gray-300 mb-6">
+    <h1 class="text-lg sm:text-xl font-bold text-gray-300 mb-4 sm:mb-6">
       Liste des jeux disponibles actuellement
     </h1>
 
     <div *ngIf="games.length > 0; else noGames">
       <div
-        class="flex flex-col md:flex-row bg-gray-800 bg-opacity-70 p-6 rounded-lg shadow-lg gap-6"
+        class="flex flex-col sm:flex-row bg-gray-800 bg-opacity-70 p-4 sm:p-6 rounded-lg shadow-lg gap-4 sm:gap-6 w-full max-w-md sm:max-w-3xl"
         [@fadeSlide]
       >
         <div class="flex-1 text-left">
-          <h2 class="text-2xl font-bold text-gray-300">
+          <h2 class="text-lg sm:text-2xl font-bold text-gray-300">
             {{ games[currentIndex].title }}
           </h2>
-          <p class="text-gray-400 mt-2 max-w-96 line-clamp-3 text-justify text-sm">
+          <p
+            class="text-gray-400 mt-2 line-clamp-3 text-justify text-sm sm:max-w-96"
+          >
             {{ games[currentIndex].description }}
           </p>
-          <div class="mt-4 flex gap-2">
-            <a [href]="games[currentIndex].downloadLink">
+          <div class="mt-4 flex flex-col sm:flex-row gap-2">
+            <a [href]="games[currentIndex].downloadLink" target="_blank" rel="noopener noreferrer">
               <button
-                class="bg-red-800 hover:bg-red-700 text-white py-2 px-4 rounded-full"
+                class="bg-red-800 hover:bg-red-700 text-white py-2 px-4 rounded-full w-full sm:w-auto"
               >
                 Télécharger
               </button>
             </a>
             <button
               (click)="openModal(games[currentIndex])"
-              class="bg-gray-700 hover:bg-gray-600 text-white py-2 px-4 rounded-full"
+              class="bg-gray-700 hover:bg-gray-600 text-white py-2 px-4 rounded-full w-full sm:w-auto"
             >
               Détails
             </button>
           </div>
         </div>
+
+        <!-- Image toujours centrée & taille maintenue -->
         <div class="flex-1 flex items-center justify-center">
           <img
             [src]="games[currentIndex].image"
             [alt]="games[currentIndex].title"
-            class="rounded-lg shadow-md object-fill mx-auto w-72 h-40"
+            class="rounded-lg shadow-md object-contain w-72 h-40 sm:w-72 sm:h-40 mx-auto"
           />
         </div>
       </div>
+
       <button
         *ngIf="games.length > 1"
         (click)="nextGame()"
@@ -57,25 +62,30 @@
         Voir le jeu suivant →
       </button>
     </div>
+
     <ng-template #noGames>
       <p class="text-gray-400">Aucun jeu disponible pour le moment.</p>
     </ng-template>
   </div>
 
-  <!-- ato ny detail jeux modal -->
+  <!-- Modal Détails Jeux -->
   <div
     *ngIf="selectedGame"
-    class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50"
+    class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 p-4"
   >
-    <div class="bg-gray-800 p-6 rounded-lg shadow-lg max-w-2xl w-full relative">
+    <div
+      class="bg-gray-800 p-4 sm:p-6 rounded-lg shadow-lg max-w-md sm:max-w-2xl w-full relative"
+    >
       <button (click)="closeModal()" class="absolute top-2 right-2 text-white">
         ✖
       </button>
-      <h2 class="text-2xl font-bold text-gray-300 text-center">
+      <h2 class="text-lg sm:text-2xl font-bold text-gray-300 text-center">
         {{ selectedGame.title }}
       </h2>
-      <div class="mt-2 max-h-32 overflow-y-auto px-2 scrollable-content">
-        <p class="text-gray-400 whitespace-pre-line break-words text-justify text-sm">
+      <div class="mt-2 max-h-96 overflow-y-auto px-2 scrollable-content">
+        <p
+          class="text-gray-400 whitespace-pre-line break-words text-justify text-sm"
+        >
           {{ selectedGame.description }}
         </p>
       </div>
@@ -84,7 +94,7 @@
         <img
           [src]="selectedGame.image"
           [alt]="selectedGame.title"
-          class="rounded-lg shadow-md object-cover max-h-64 mx-auto"
+          class="rounded-lg shadow-md object-contain w-72 h-40 sm:w-72 sm:h-40 mx-auto"
         />
       </div>
     </div>
