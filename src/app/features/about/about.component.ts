@@ -2,7 +2,7 @@ import { Component } from "@angular/core";
 
 @Component({
   selector: "app-about",
-  standalone : false,
+  standalone: false,
   templateUrl: "./about.component.html",
   styleUrl: "./about.component.scss",
 })
@@ -52,13 +52,6 @@ export class AboutComponent {
       email: "tiavinanomana451@gmail.com",
     },
     {
-      name: "RAMILISON Faniloniaina",
-      age: null,
-      role: "Développeur",
-      specialties: ["Développement"],
-      email: "faniloniaina21@gmail.com",
-    },
-    {
       name: "ANDRIANJAFIMAHEFA Anjarimanitra Misandratriniaina",
       age: 18,
       role: "Développeur",
@@ -72,9 +65,18 @@ export class AboutComponent {
       specialties: ["Machine learning", "Cybersecurity"],
       email: "randriamananjara24@gmail.com",
     },
+    {
+      name: "RAMILISON Faniloniaina",
+      age: null,
+      role: "Développeur",
+      specialties: ["Développement"],
+      email: "faniloniaina21@gmail.com",
+    },
   ];
   prevSlide() {
-    this.currentIndex = (this.currentIndex - 1 + this.teamMembers.length) % this.teamMembers.length;
+    this.currentIndex =
+      (this.currentIndex - 1 + this.teamMembers.length) %
+      this.teamMembers.length;
   }
 
   nextSlide() {
