@@ -12,7 +12,7 @@ export class AboutComponent {
     {
       name: "RANDRIANIRINA Lahatriniaina Luca",
       age: 19,
-      role: "Leader",
+      role: "Leader / Développeur",
       specialties: ["Game Development", "Cybersecurity"],
       email: "lucarandrianirina2507@gmail.com",
     },
