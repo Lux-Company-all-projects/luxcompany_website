@@ -72,6 +72,13 @@ export class AboutComponent {
       specialties: ["Développement"],
       email: "faniloniaina21@gmail.com",
     },
+    {
+      name: "RANAIVOSEHENO Tojonirina fanomezantsoa",
+      age: 19,
+      role: "Développeur",
+      specialties: ["Cybersecurity"],
+      email: "fanomezanatojonirina4@gmail.com",
+    },  
   ];
   prevSlide() {
     this.currentIndex =
