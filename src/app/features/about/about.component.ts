@@ -86,6 +86,13 @@ export class AboutComponent {
       specialties: ["Genie logiciel"],
       email: "fanomezanafana@gmail.com",
     },     
+    {
+      name: "Ny Avo Steeve",
+      age: 19,
+      role: "Développeur",
+      specialties: ["Developpeur C#"],
+      email: "nyavosteeve1@gmail.com",
+    },     
   ];
   prevSlide() {
     this.currentIndex =
