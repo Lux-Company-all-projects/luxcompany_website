@@ -78,7 +78,14 @@ export class AboutComponent {
       role: "Développeur",
       specialties: ["Cybersecurity"],
       email: "fanomezanatojonirina4@gmail.com",
-    },  
+    }, 
+    {
+      name: "RAFANAMBINANA Fanomezantsoa",
+      age: 21,
+      role: "Développeur",
+      specialties: ["Genie logiciel"],
+      email: "fanomezanafana@gmail.com",
+    },     
   ];
   prevSlide() {
     this.currentIndex =
