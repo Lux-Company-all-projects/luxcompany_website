@@ -16,9 +16,7 @@ export const Footer = () => {
             <span className="font-semibold text-sm sm:text-base text-foreground">Lux Company</span>
           </div>
 
-          <p className="text-xs sm:text-sm text-muted-foreground flex items-center gap-1">
-            {t('footer.madeWith')} <Heart className="w-3 h-3 sm:w-4 sm:h-4 text-primary fill-primary" /> Madagascar
-          </p>
+      
 
           <p className="text-xs sm:text-sm text-muted-foreground">
             © {currentYear} Lux Company. {t('footer.rights')}
