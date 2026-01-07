@@ -24,13 +24,6 @@ export const teamMembers: TeamMember[] = [
     icon: Globe,
   },
   {
-    name: "AMBININTSOA Hajatiana",
-    role: "developer",
-    specialties: ["Réseau Informatique"],
-    email: "hajatianaambinintsoa11@gmail.com",
-    icon: Cpu,
-  },
-  {
     name: "RAKOTOARISON Avotra",
     role: "developer",
     specialties: ["Cybersecurity"],
