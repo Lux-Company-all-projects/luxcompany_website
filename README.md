@@ -325,7 +325,6 @@ export const MyComponent = ({ title, onClick }: MyComponentProps) => {
 
 - [React Documentation](https://react.dev)
 - [TypeScript Handbook](https://www.typescriptlang.org/docs/)
-- blabla
 - [Tailwind CSS](https://tailwindcss.com)
 - [shadcn/ui](https://ui.shadcn.com)
 - [Framer Motion](https://www.framer.com/motion/)
