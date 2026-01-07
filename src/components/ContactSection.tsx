@@ -61,7 +61,7 @@ export const ContactSection = () => {
           <div className="mt-8 sm:mt-12 flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-8 text-muted-foreground">
             <a href="mailto:contact@luxcompany.mg" className="flex items-center gap-2 hover:text-primary transition-colors text-sm sm:text-base">
               <Mail className="w-4 h-4 sm:w-5 sm:h-5" />
-              contact@luxcompany.mg
+              lucarandrianirina2507@gmail.com
             </a>
             <a href="#" className="flex items-center gap-2 hover:text-primary transition-colors text-sm sm:text-base">
               <MessageSquare className="w-4 h-4 sm:w-5 sm:h-5" />
