@@ -175,7 +175,7 @@ export const ProjectsSection = () => {
 };
 ```
 
-## 🎨 Styling Guidelines
+## Styling Guidelines
 
 ### Tailwind CSS + shadcn/ui
 
@@ -207,7 +207,7 @@ The app supports dark/light themes with CSS variables:
 .primary-foreground { color: hsl(var(--primary-foreground)); }
 ```
 
-## 🌐 Internationalization
+## Internationalization
 
 ### Adding Translations
 
@@ -250,7 +250,7 @@ return <h1>{t('nav.home')}</h1>;
 
 Language preference is automatically saved to localStorage and restored on app load.
 
-## 🔧 Development Guidelines
+## Development Guidelines
 
 ### Code Style
 
