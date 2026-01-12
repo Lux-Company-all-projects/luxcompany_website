@@ -12,7 +12,7 @@ export const teamMembers: TeamMember[] = [
   {
     name: "RANDRIANIRINA Lahatriniaina Luca",
     role: "leader",
-    specialties: ["Game Development", "Cybersecurity"],
+    specialties: ["Game Development", "Web Development"],
     email: "lucarandrianirina2507@gmail.com",
     icon: Gamepad2,
   },
