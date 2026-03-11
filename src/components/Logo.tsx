@@ -9,7 +9,7 @@ export const Logo = () => {
       whileTap={{ scale: 0.98 }}
     >
       <img 
-        src="src/assets/lux_company_logo.png" 
+        src="@/src/assets/lux_company_logo.png" 
         alt="Lux Company Logo"
         className="w-8 h-8 sm:w-10 sm:h-10 object-contain"
       />
