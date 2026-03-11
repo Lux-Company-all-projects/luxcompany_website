@@ -101,7 +101,7 @@ export const translations = {
         roles: {
           leader: "Leader",
           developer: "Développeur",
-          artist2d: "Mpanao sary"
+          artist2d: "Artiste 2D"
         }
       },
       projects: {
@@ -185,7 +185,7 @@ export const translations = {
         roles: {
           leader: "Leader",
           developer: "Developer",
-          artist2d: "Mpanao sary"
+          artist2d: "2D Artist"
         }
       },
       projects: {
