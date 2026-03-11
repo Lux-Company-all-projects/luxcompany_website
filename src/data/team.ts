@@ -2,7 +2,7 @@ import { LucideIcon, Gamepad2, Globe, Cpu, Shield, Brain, Code, Settings } from 
 
 export interface TeamMember {
   name: string;
-  role: 'leader' | 'developer' | 'designer';
+  role: 'leader' | 'developer' | 'artist2d';
   specialties: string[];
   email: string;
   icon: LucideIcon;
@@ -32,7 +32,7 @@ export const teamMembers: TeamMember[] = [
   },
   {
     name: "ANDRIANARIVO Alain Patrick",
-    role: "Artist2D",
+    role: "artist2d",
     specialties: ["Ethical Hacking"],
     email: "pahkely33@gmail.com",
     icon: Shield,
@@ -88,7 +88,7 @@ export const teamMembers: TeamMember[] = [
   },
   {
     name: "Landry",
-    role: "Artist2D",
+    role: "artist2d",
     specialties: ["Développement"],
     email: "",
     icon: Shield,
