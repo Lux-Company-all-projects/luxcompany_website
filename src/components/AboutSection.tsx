@@ -39,7 +39,7 @@ export const AboutSection = () => {
                   <img
                     src={img_logo}
                     alt="Lux Company Logo"
-                    className="w-16 h-16 sm:w-20 sm:h-20 object-contain"
+                    className="w-16 h-16 sm:w-20 sm:h-20 mx-auto mb-4 rounded-2xl flex items-center justify-center object-contain"
                   />
                   <p className="text-lg sm:text-xl font-semibold text-foreground">Lux Company</p>
                   <p className="text-sm text-muted-foreground mt-1">Madagascar 🇲🇬</p>
