@@ -32,7 +32,7 @@ export const teamMembers: TeamMember[] = [
   },
   {
     name: "ANDRIANARIVO Alain Patrick",
-    role: "designer",
+    role: "Artist2D",
     specialties: ["Ethical Hacking"],
     email: "pahkely33@gmail.com",
     icon: Shield,
@@ -45,7 +45,7 @@ export const teamMembers: TeamMember[] = [
     icon: Gamepad2,
   },
   {
-    name: "ANDRIANJAFIMAHEFA Anjarimanitra",
+    name: "ANDRIANJAFIMAHEFA Misandratriniaina",
     role: "developer",
     specialties: ["Intelligence Artificielle"],
     email: "andrianjafimahefamisandratra@gmail.com",
@@ -85,5 +85,12 @@ export const teamMembers: TeamMember[] = [
     specialties: ["Développeur C#"],
     email: "nyavosteeve1@gmail.com",
     icon: Code,
+  },
+  {
+    name: "Landry",
+    role: "Artist2D",
+    specialties: ["Développement"],
+    email: none,
+    icon: Shield,
   },
 ];
