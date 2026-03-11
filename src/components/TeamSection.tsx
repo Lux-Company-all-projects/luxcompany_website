@@ -56,7 +56,7 @@ export const TeamSection = () => {
                           <span className={`inline-block px-2 py-0.5 rounded-full text-xs font-medium ${
                             member.role === 'leader' 
                               ? 'bg-primary/20 text-primary' 
-                              : member.role === 'designer'
+                              : member.role === 'artist2d'
                               ? 'bg-accent/20 text-accent'
                               : 'bg-muted text-muted-foreground'
                           }`}>
