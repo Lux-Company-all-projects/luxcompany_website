@@ -1,5 +1,4 @@
 import { motion } from 'framer-motion';
-import logo_img from '@/assets/lux_company_logo.png'
 
 export const Logo = () => {
   return (
@@ -9,11 +8,9 @@ export const Logo = () => {
       whileHover={{ scale: 1.02 }}
       whileTap={{ scale: 0.98 }}
     >
-      <img 
-        src={{logo_img}} 
-        alt="Lux Company Logo"
-        className="w-8 h-8 sm:w-10 sm:h-10 object-contain"
-      />
+      <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-lg bg-primary flex items-center justify-center">
+        <span className="text-primary-foreground font-bold text-base sm:text-lg">L</span>
+      </div>
       <span className="font-semibold text-base sm:text-lg text-foreground">Lux Company</span>
     </motion.a>
   );
