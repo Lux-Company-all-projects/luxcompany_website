@@ -1,5 +1,6 @@
 import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
+import img_logo from '@/assets/lux_company_logo.png'
 
 
 export const AboutSection = () => {
@@ -32,9 +33,14 @@ export const AboutSection = () => {
             <div className="aspect-square rounded-2xl bg-gradient-to-br from-primary/20 to-accent/20 p-6 sm:p-8">
               <div className="w-full h-full rounded-xl bg-card border border-border flex items-center justify-center">
                 <div className="text-center">
-                  <div className="w-16 h-16 sm:w-20 sm:h-20 mx-auto mb-4 rounded-2xl bg-primary flex items-center justify-center">
+                  {/* <div className="w-16 h-16 sm:w-20 sm:h-20 mx-auto mb-4 rounded-2xl bg-primary flex items-center justify-center">
                     <span className="text-primary-foreground font-bold text-2xl sm:text-3xl">L</span>
-                  </div>
+                  </div> */}
+                  <img
+                    src={img_logo}
+                    alt="Lux Company Logo"
+                    className="w-16 h-16 sm:w-20 sm:h-20 object-contain"
+                  />
                   <p className="text-lg sm:text-xl font-semibold text-foreground">Lux Company</p>
                   <p className="text-sm text-muted-foreground mt-1">Madagascar 🇲🇬</p>
                 </div>
