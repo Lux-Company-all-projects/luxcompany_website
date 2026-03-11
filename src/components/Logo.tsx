@@ -9,7 +9,7 @@ export const Logo = () => {
       whileTap={{ scale: 0.98 }}
     >
       <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-lg bg-primary flex items-center justify-center">
-        <span className="text-primary-foreground font-bold text-base sm:text-lg">L</span>
+        <span className="text-primary-foreground font-bold text-base sm:text-lg">P</span>
       </div>
       <span className="font-semibold text-base sm:text-lg text-foreground">Lux Company</span>
     </motion.a>
