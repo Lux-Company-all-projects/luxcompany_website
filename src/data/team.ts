@@ -90,7 +90,7 @@ export const teamMembers: TeamMember[] = [
     name: "Landry",
     role: "Artist2D",
     specialties: ["Développement"],
-    email: none,
+    email: "",
     icon: Shield,
   },
 ];
