@@ -1,9 +1,6 @@
 import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
-import { Mail, MessageSquare, Send } from 'lucide-react';
-import { Button } from '@/components/ui/button';
-import { Input } from '@/components/ui/input';
-import { Textarea } from '@/components/ui/textarea';
+import { Mail, MessageSquare } from 'lucide-react';
 
 export const ContactSection = () => {
   const { t } = useTranslation();
@@ -29,37 +26,8 @@ export const ContactSection = () => {
           transition={{ duration: 0.6 }}
           className="max-w-xl mx-auto"
         >
-          <form className="space-y-4 sm:space-y-6">
-            <div className="grid sm:grid-cols-2 gap-4">
-              <div className="relative">
-                <Input
-                  placeholder={t('contact.name')}
-                  className="h-12 pl-4 bg-card border-border focus:border-primary"
-                />
-              </div>
-              <div className="relative">
-                <Input
-                  type="email"
-                  placeholder={t('contact.email')}
-                  className="h-12 pl-4 bg-card border-border focus:border-primary"
-                />
-              </div>
-            </div>
-            <div className="relative">
-              <Textarea
-                placeholder={t('contact.message')}
-                rows={5}
-                className="resize-none bg-card border-border focus:border-primary"
-              />
-            </div>
-            <Button size="lg" className="w-full group shadow-glow">
-              {t('contact.send')}
-              <Send className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
-            </Button>
-          </form>
-
-          <div className="mt-8 sm:mt-12 flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-8 text-muted-foreground">
-            <a href="mailto:contact@luxcompany.mg" className="flex items-center gap-2 hover:text-primary transition-colors text-sm sm:text-base">
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-8 text-muted-foreground">
+            <a href="mailto:team.luxcompany@gmail.com" className="flex items-center gap-2 hover:text-primary transition-colors text-sm sm:text-base">
               <Mail className="w-4 h-4 sm:w-5 sm:h-5" />
               team.luxcompany@gmail.com
             </a>
