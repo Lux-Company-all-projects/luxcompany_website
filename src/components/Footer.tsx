@@ -1,5 +1,6 @@
 import { useTranslation } from 'react-i18next';
 import { Heart } from 'lucide-react';
+import img_logo from '@/assets/lux_company_logo.png'
 
 export const Footer = () => {
   const { t } = useTranslation();
@@ -10,9 +11,11 @@ export const Footer = () => {
       <div className="container mx-auto px-4 sm:px-6">
         <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
           <div className="flex items-center gap-2 sm:gap-3">
-            <div className="w-7 h-7 sm:w-8 sm:h-8 rounded-lg bg-primary flex items-center justify-center">
-              <span className="text-primary-foreground font-bold text-sm sm:text-base">L</span>
-            </div>
+              <img
+                    src={img_logo}
+                    alt="Lux Company Logo"
+                    className="w-16 h-16 sm:w-20 sm:h-20 mx-auto mb-4 rounded-2xl flex items-center justify-center object-contain"
+                  />
             <span className="font-semibold text-sm sm:text-base text-foreground">Lux Company</span>
           </div>
 

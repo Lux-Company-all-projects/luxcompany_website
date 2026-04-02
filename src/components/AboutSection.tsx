@@ -33,9 +33,6 @@ export const AboutSection = () => {
             <div className="aspect-square rounded-2xl bg-gradient-to-br from-primary/20 to-accent/20 p-6 sm:p-8">
               <div className="w-full h-full rounded-xl bg-card border border-border flex items-center justify-center">
                 <div className="text-center">
-                  {/* <div className="w-16 h-16 sm:w-20 sm:h-20 mx-auto mb-4 rounded-2xl bg-primary flex items-center justify-center">
-                    <span className="text-primary-foreground font-bold text-2xl sm:text-3xl">L</span>
-                  </div> */}
                   <img
                     src={img_logo}
                     alt="Lux Company Logo"
