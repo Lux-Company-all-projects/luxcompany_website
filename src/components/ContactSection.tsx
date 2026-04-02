@@ -42,17 +42,17 @@ export const ContactSection = () => {
               WhatsApp
             </a>
 
-            <a href="tel:+261XXXXXXXXX" className="flex items-center gap-2 hover:text-primary transition-colors text-sm sm:text-base text-muted-foreground">
+            <a href="tel:+261334234927" className="flex items-center gap-2 hover:text-primary transition-colors text-sm sm:text-base text-muted-foreground">
               <Phone className="w-4 h-4 sm:w-5 sm:h-5" />
-              +261 XX XXX XX
+              +261 33 42 349 27
             </a>
 
-            <a href="https://facebook.com/VOTRE_PAGE" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:text-primary transition-colors text-sm sm:text-base text-muted-foreground">
+            <a href="https://facebook.com/profile.php?id=61554854878749" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:text-primary transition-colors text-sm sm:text-base text-muted-foreground">
               <Facebook className="w-4 h-4 sm:w-5 sm:h-5" />
               Facebook
             </a>
 
-            <a href="https://instagram.com/VOTRE_COMPTE" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:text-primary transition-colors text-sm sm:text-base text-muted-foreground">
+            <a href="https://instagram.com/team.luxcompany" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:text-primary transition-colors text-sm sm:text-base text-muted-foreground">
               <Instagram className="w-4 h-4 sm:w-5 sm:h-5" />
               Instagram
             </a>
